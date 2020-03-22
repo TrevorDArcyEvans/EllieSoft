@@ -1,0 +1,3 @@
+Halma is a board game invented in 1883 or 1884 by an American plastic surgeon at Harvard Medical School, George Howard Monks. The inspiration was an English game called Hoppity, which was devised in 1854.
+    
+The goal of the game is to transfer all of your pieces from one corner to the opposite corner in the least number of moves.

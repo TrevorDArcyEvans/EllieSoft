@@ -1,0 +1,157 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+  <head>
+	  <!-- Change this if you want to allow scaling -->
+    <meta name="viewport" content="width=default-width; user-scalable=no" />
+
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8">
+    
+    <link type="text/css" rel="stylesheet" href="style.css">
+
+    <title>Neko</title>
+	
+	<!-- iPad/iPhone specific css below, add after your main css >
+	<link rel="stylesheet" media="only screen and (max-device-width: 1024px)" href="ipad.css" type="text/css" />		
+	<link rel="stylesheet" media="only screen and (max-device-width: 480px)" href="iphone.css" type="text/css" />		
+	-->
+<script type="text/javascript" charset="utf-8" src="phonegap.js"></script>
+<script type="text/javascript" charset="utf-8" src="common.js"></script>
+<script type="text/javascript" charset="utf-8" src="BrowserDetect.js"></script>
+<script type="text/javascript" charset="utf-8" src="SoundPlayer.js"></script>
+
+<script type="text/javascript" charset="utf-8">
+
+// prevent dragging
+document.addEventListener("touchmove", preventBehavior, false);
+
+// milliseconds between playing a sound
+var kSoundInterval = 5000;
+
+var kSoundThreshold = 0.35;
+
+function PlaySoundAtRandom()
+{
+  if (Math.random() > kSoundThreshold)
+  {
+    PlayRandomSound();
+  }
+  setTimeout("PlaySoundAtRandom();", kSoundInterval);
+}
+
+function onBodyLoad()
+{
+  document.addEventListener("deviceready",onDeviceReady,false);
+  
+  setTimeout("PlaySoundAtRandom();", kSoundInterval);
+}
+
+/* When this function is called, PhoneGap has been initialized and is ready to roll */
+function onDeviceReady()
+{
+  watchForShake(1.25);
+  document.addEventListener("orientationChanged", UpdateOrientation);
+}
+
+function UpdateOrientation(e)
+{
+  switch(e.orientation)
+  {
+    case 0: // portrait
+    case 180: // portrait
+      // do your thing here
+      //debug.log("0 180");
+      break;
+
+    case -90: // landscape
+    case 90: // landscape
+      // do your thing here
+      //debug.log("90 -90");
+      break;
+  }
+}
+
+</script>
+    
+<script language="JavaScript">
+
+function anotherNeko(bActive)
+{
+	x = Math.floor(Math.random() * box.boundWidth());
+	y = Math.floor(Math.random() * box.boundHeight());
+	scat = new Neko(x ,y, bActive);	
+}
+
+function catHerding()
+{
+	for (var i = 0; i < 10; i++)
+	{
+		anotherNeko(true);
+	}
+}
+
+function getNekoType()
+{
+	return document.location.search.replace(/\?/,"");
+}
+
+window.NekoType = getNekoType();
+
+function watchForShake(threshold)
+{
+  var axl = new Accelerometer(); 
+
+  axl.watchAcceleration
+  (
+    function (Accel)
+    {
+      if (true === Accel.is_updating)
+      {
+        return;
+      }
+
+      if (Accel.x >= threshold || Accel.x <= (0 - threshold) ||
+          Accel.y >= threshold || Accel.y <= (0 - threshold))
+      {
+        window.location.reload();
+      }
+    }
+    , function(){}
+    , {frequency : 500}
+  );
+}
+
+</script>
+
+</head>
+<body onload="onBodyLoad()">
+  	
+<h1 id="nl">
+  <script src="index_files/n200504.js"></script>
+  <style type="text/css">#nl{display:none;}</style>
+  <a style="" href="index.html" id="nl">Neko</a>
+</h1>
+<h3>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	<a class="nekotype" href="" onclick="anotherNeko();return false;"><img src="VistaICO/Symbol-Add.png"></a>
+	<a class="nekotype" href="" onclick="catHerding();return false;"><img src="VistaICO/Refresh-Cat.png"></a>
+	<a class="nekotype" onclick="window.location.reload();"><img src="VistaICO/Redo.png"></a>
+	<a class="nekotype" href="settings.html"><img src="VistaICO/Config-Tools.png"></a>
+	<a class="nekotype" href="help.html"><img src="VistaICO/Symbol-Help.png"></a>
+	<a class="nekotype" href="about.html"><img src="VistaICO/Symbol-Information.png"></a>
+	</h3>
+<div>
+  <div id="layerNeko0" style="position: absolute; clip: rect(0px, 32px, 32px, 0px); visibility: visible; left: 7.57755px; top: 5.46955px; z-index: 1000;">
+    <a
+      href="index.html"
+      ondblclick='document.location.href="index.html"' 
+      onmouseover="aNekos[0].message();return true"
+      onmouseout='window.status = ""'
+      onclick="aNekos[0].active = !aNekos[0].active;return false;"
+      onfocus="this.blur()"
+    >
+      <img name="imageNeko0" src="index_files/settings/sleep1_002.gif" border="0">
+    </a>
+  </div>
+</div>    
+    
+</body>
+</html>

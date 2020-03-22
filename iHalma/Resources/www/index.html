@@ -1,0 +1,62 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+  <head>
+    <!-- Change this if you want to allow scaling -->
+    <meta name="viewport" content="width=default-width; user-scalable=no" />
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8">
+    <link type="text/css" rel="stylesheet" href="common.css">
+
+    <title>iHalma</title>
+
+  <!-- iPad/iPhone specific css below, add after your main css >
+  <link rel="stylesheet" media="only screen and (max-device-width: 1024px)" href="ipad.css" type="text/css" />
+  <link rel="stylesheet" media="only screen and (max-device-width: 480px)" href="iphone.css" type="text/css" />
+  -->
+
+  <script type="text/javascript" charset="utf-8" src="common.js"></script>
+  <script type="text/javascript" charset="utf-8">
+
+  function onBodyLoad()
+  {
+    document.addEventListener("deviceready", onDeviceReady, false);
+  }
+
+  /* When this function is called, PhoneGap has been initialized and is ready to roll */
+  function onDeviceReady()
+  {
+    // do your thing!
+  }
+
+  </script>
+
+  <script src="./Halma_files/halma-localstorage.js"></script>
+
+  </head>
+
+<body id="bg" onload="onBodyLoad()">
+  <div>
+    <h2 align="center">iHalma</h2>
+    <br>
+    Halma (from the Greek word ἅλμα meaning "jump") is a board game invented in 1883 or 1884 by
+    an American plastic surgeon at Harvard Medical School, George Howard Monks. The inspiration
+    was an English game called Hoppity, which was devised in 1854.<br><br>
+
+    The goal of the game is to transfer all of your pieces from one corner to the opposite corner
+    in the least number of moves.<br><br>
+
+    <div align=center>
+      <!-- debugging>
+      <input type="button" onclick="ClearLocalStorage()" value="Clear" />&nbsp; &nbsp; &nbsp;
+      </-->
+      <input type="button" onclick="location.href='rules.html';return false;" value="Rules" /><br>
+      <input type="button" onclick="location.href='Halma.html';return false;" value="Let's play!" />
+
+    <div align=right>
+      <a onclick="location.href='More_iOS/more.html';"><img class="icon" src="./VistaICO/Symbol-Information.png"
+         style="bottom:65px;position:relative;z-index:1000;"></a>
+    </div>
+    </div>
+
+  </div>
+</body>
+</html>

@@ -1,0 +1,26 @@
+body
+{
+  font-family: Verdana,Arial,Helvetica;
+  font-size:13px;
+  -webkit-user-select: none;  /* prevent copy paste for all elements */
+}
+
+.nekotype td
+{
+  font-size:9px;
+  text-align:center;
+}
+
+.nekotype img
+{
+  width:32px;
+  height:32px;
+  border:0px;
+}
+
+.nekotype a
+{
+  border:1px solid white;
+}
+
+

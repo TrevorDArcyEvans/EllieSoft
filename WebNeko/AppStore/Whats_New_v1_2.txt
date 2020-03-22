@@ -1,0 +1,7 @@
+Now with cat sounds!  Every so often, Neko will purr or miaow to let you know he's there and contented.
+
+Added reset button for iPad users.
+Now supports all orientations.
+
+More sounds, more cats, any which way = more fun!
+

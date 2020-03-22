@@ -1,0 +1,27 @@
+*
+{
+  margin: 0px;
+  padding: 0px;
+}
+
+body
+{
+  background: #111;
+}
+
+#container
+{
+  position: absolute;
+
+  width: 1024px;
+  height: 768px;
+
+  color: #EEE;
+}
+
+#canvas
+{
+  width: 100%;
+  height: 768px
+  background: #000;
+}

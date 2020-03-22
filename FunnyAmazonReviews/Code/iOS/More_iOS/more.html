@@ -1,0 +1,164 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html style="margin-left:0px;margin-right:0px;">
+<head>
+  <!-- Change this if you want to allow scaling -->
+  <meta name="viewport" content="width=default-width; user-scalable=no" />
+  <meta http-equiv="Content-type" content="text/html; charset=utf-8">
+
+  <title>More Apps for Kids</title>
+
+  <!-- iPad/iPhone specific css below, add after your main css >
+    <link rel="stylesheet" media="only screen and (max-device-width: 1024px)" href="ipad.css" type="text/css" />
+    <link rel="stylesheet" media="only screen and (max-device-width: 480px)" href="iphone.css" type="text/css" />
+  -->
+
+  <style>
+    *
+    {
+      margin: 10px;
+      font-family:Arial;
+      -webkit-user-select: none;  /* prevent copy paste for all elements */
+    }
+
+    button
+    {
+      font-size: large;
+      height:32px;
+    }
+
+    /*
+    ** Shiny buttons
+    */
+    input[type=button]
+    {
+      font-family: "Helvetica Neue", Helvetica, sans-serif;
+      font-size: 1.3em;
+      font-weight: bold;
+      width:150px;
+      height: 45px;
+      border: 3px solid #282726;
+      background: -webkit-gradient( linear, left top, left bottom, from(#e2e2e2), to(#8c8a88), color-stop(0.5, #acadae), color-stop(0.5, #82807e) );
+      margin: 0 0 3px 0;
+      text-shadow: 0px 1px 0 #cecece;
+      -webkit-background-origin: padding-box;
+      -webkit-background-clip: border-box;
+      -webkit-border-radius: 8px;
+    }
+
+    .app_icon
+    {
+      border: 1px solid;
+      width: 57px;
+      height: 57px;
+      border-radius: 8px;
+      background-color: black;
+      box-shadow: 5px 5px 5px #888;
+    }
+
+    .chevron
+    {
+      font-size: x-large;
+      font-weight: bolder;
+    }
+
+  </style>
+
+  <script type="text/javascript">
+    function DoMail()
+    {
+      var recipient = "";
+      var subject = "Great kids apps at www.TopAppsForChildren.com";
+      var body = "";
+      window.open("mailto:" + recipient + "?subject=" + subject + "&body=" + body);
+    }
+  </script>
+</head>
+
+<body>
+  <div align="center">
+    <img src="TopAppsForChildren_logo.png"  onclick="location.href='http://www.TopAppsForChildren.com'" style="margin-left:-10px;"/>
+  </div>
+
+  <br />
+  If you like this kids App, you'll love our other Apps:
+
+  <div align="center">
+    <table style="width:100%;">
+      <tr onclick="location.href='itms://itunes.apple.com/us/app/alphabet-flash/id429863053?mt=8&ls=1#'">
+        <td><img class="app_icon" src="AlphabetFlash.png"></td>
+        <td>
+          <h4>Alphabet Flash</h4><p>
+          Learn the shapes and sounds of the alphabet
+        </td>
+        <td class="chevron">></td>
+      </tr>
+
+      <tr onclick="location.href='itms://itunes.apple.com/us/app/alphabet-tracer/id395330941?mt=8&ls=1#'">
+        <td><img class="app_icon" src="AlphabetTracer.png"></td>
+        <td>
+          <h4>Alphabet Tracer</h4><p>
+          Learn to write, say and sign the alphabet
+        </td>
+        <td class="chevron">></td>
+      </tr>
+
+      <tr onclick="location.href='itms://itunes.apple.com/us/app/amazing/id497803141?ls=1&mt=8&ls=1#'">
+        <td><img class="app_icon" src="Amazing.png"></td>
+        <td>
+          <h4>Amazing</h4><p>
+          Solve an infinite number of timed mazes
+        </td>
+        <td class="chevron">></td>
+      </tr>
+
+      <tr onclick="location.href='itms://itunes.apple.com/us/app/bear-balls/id427129615?mt=8&ls=1#'">
+        <td><img class="app_icon" src="BearBalls.png"></td>
+        <td>
+          <h4>Bear Balls</h4><p>
+          Fast paced fun dodging the balls
+        </td>
+        <td class="chevron">></td>
+      </tr>
+
+      <tr onclick="location.href='itms://itunes.apple.com/us/app/spotty-dottie/id429739519?ls=1&mt=8'">
+        <td><img class="app_icon" src="SpottyDotty.png"></td>
+        <td>
+          <h4>Spotty Dottie</h4><p>
+          Lots and lots of dot-to-dots for your tots!
+        </td>
+        <td class="chevron">></td>
+      </tr>
+
+      <tr onclick="location.href='itms://itunes.apple.com/us/app/time-flash/id438510892?mt=8&ls=1#'">
+        <td><img class="app_icon" src="TimeFlash.png"></td>
+        <td>
+          <h4>Time Flash</h4><p>
+          Learn and practice to tell time
+        </td>
+        <td class="chevron">></td>
+      </tr>
+    </table>
+    <hr>
+
+    Share us with your friends:<p>
+    <table id="Share" style="width:300px;">
+      <tr>
+        <td id="Facebook">
+          <a href="https://www.facebook.com/topkidsapps"><img src="facebook_32.png" /></a>
+        </td>
+
+        <td id="Twitter">
+          <a href="https://twitter.com/#!/appsforchildren"><img src="twitter_32.png" /></a>
+        </td>
+
+        <td id="Email">
+          <img src="email_32.png" alt="email" onclick="DoMail();" />
+        </td>
+      </tr>
+    </table>
+
+  </div>
+
+</body>
+</html>
+

@@ -1,0 +1,10 @@
+Amazing is a maze solving, puzzle game. Just help Bearnadette get through the maze to the finish before she runs out of time. Don't worry if you can't find the way as there's always the option of showing the path!
+
+    - infinite number of levels for lots of fun
+    - power ups for extra time and points
+    - penalties for time and points
+    - 'rocket mode' for a temporary speed boost
+    - 'Hall of Fame' to record your high score
+    - show the path (but it'll cost you!)
+
+Can you make it out in time?

@@ -1,0 +1,75 @@
+*
+{
+  margin:10px;
+  font-family:Arial;
+  -webkit-user-select: none;  /* prevent copy paste for all elements */
+}
+
+#bg
+{
+  background-image:url('zeimusu_spotty_dog_bg.png');
+  background-repeat: no-repeat;
+  background-position: center top;
+}
+
+img.Disclosure
+{
+  width:50px;
+  height:50px;
+}
+
+img.InstrHeader
+{
+  width:80px;
+  height:120px;
+}
+
+img.InstrImg
+{
+  width:50px;
+  height:50px;
+}
+
+div.hr
+{
+  height: 15px;
+  background: #fff url(CoverFlow.png) no-repeat scroll center;
+}
+
+div.hr hr
+{
+  display: none;
+}
+
+button
+{
+  font-size: large;
+  height:32px;
+}
+
+/*
+** Shiny buttons
+*/
+input[type=button]
+{
+  font-family: "Helvetica Neue", Helvetica, sans-serif;
+  font-size: 1.3em;
+  font-weight: bold;
+  width:150px;
+  height: 45px;
+  border: 3px solid #282726;
+  background: -webkit-gradient( linear, left top, left bottom, from(#e2e2e2), to(#8c8a88), color-stop(0.5, #acadae), color-stop(0.5, #82807e) );
+  margin: 0 0 3px 0;
+  text-shadow: 0px 1px 0 #cecece;
+  -webkit-background-origin: padding-box;
+  -webkit-background-clip: border-box;
+  -webkit-border-radius: 8px;
+}
+
+table.Instruction
+{
+  border-width: thin;
+  border-style: inset;
+  border-color: black;
+}
+

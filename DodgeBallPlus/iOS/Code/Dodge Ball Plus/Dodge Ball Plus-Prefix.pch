@@ -1,0 +1,7 @@
+//
+// Prefix header for all source files of the 'Dodge Ball Plus' target in the 'Dodge Ball Plus' project
+//
+
+#ifdef __OBJC__
+  #import <UIKit/UIKit.h>
+#endif

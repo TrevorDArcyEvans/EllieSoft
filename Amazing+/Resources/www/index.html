@@ -1,0 +1,172 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+  <!-- Change this if you want to allow scaling -->
+  <meta name="viewport" content="width=default-width; user-scalable=no" />
+
+  <meta http-equiv="Content-type" content="text/html; charset=utf-8">
+
+  <link type="text/css" rel="stylesheet" href="common.css">
+
+  <title>Amazing+</title>
+
+  <style>
+    *
+    {
+      margin: 1px;
+    }
+  </style>
+
+  <!-- iPad/iPhone specific css below, add after your main css >
+  <link rel="stylesheet" media="only screen and (max-device-width: 1024px)" href="ipad.css" type="text/css" />
+  <link rel="stylesheet" media="only screen and (max-device-width: 480px)" href="iphone.css" type="text/css" />
+  -->
+
+  <script type="text/javascript" charset="utf-8" src="BrowserDetect.js"></script>
+  <script type="text/javascript" charset="utf-8" src="common.js"></script>
+  <script type="text/javascript" charset="utf-8" src="game/html5game/ScoresAndLevels.js"></script>
+
+  <script>
+    function ToggleVisibility(id, disc)
+    {
+      var e = document.getElementById(id);
+      var disc = document.getElementById(disc);
+      if (e.style.visibility == "hidden")
+      {
+        e.style.visibility = "visible";
+        e.style.height = "auto";
+        e.style.overflow = "auto";
+        disc.src = "DetailDisclosureDown.png";
+      }
+      else
+      {
+        e.style.visibility = "hidden";
+        e.style.height = "0px";
+        disc.src = "DetailDisclosure.png";
+      }
+    }
+
+    function Reset()
+    {
+      JS_SetHighScore(0);
+      JS_SetHighLevel(0);
+    }
+
+    function FirstRunCheck()
+    {
+      if (isNaN(JS_GetHighScore()) || isNaN(JS_GetHighLevel()))
+      {
+        Reset();
+      }
+    }
+
+    function GotoGame()
+    {
+      var IsiPad = navigator.userAgent.match(/iPad/i) != null;
+      if (IsiPad)
+      {
+        location.href = 'game/iPad/index.html';
+      }
+      else
+      {
+        location.href = 'game/iPhone/index.html';
+      }
+    }
+  </script>
+</head>
+
+<body onLoad="FirstRunCheck();">
+  <div id="bg" style="height:400px;">
+    <h2 align="center">Amazing+ v1.1.0</h2>
+
+    <p><br>
+    <div align=center>
+      <table class="DisclosureTable" onclick="ToggleVisibility('InstructionsInfo', 'InstructionsStrap');">
+        <tr>
+          <td><img class="button_img" src="VistaICO/Help.png" /></td>
+          <td><h3>Instructions</h3></td>
+          <td><img id="InstructionsStrap" class="Disclosure" src="DetailDisclosure.png" /></td>
+        </tr>
+      </table>
+    </div>
+
+    <div id="InstructionsInfo" style="visibility:hidden;height:0px;">
+      Amazing+ is a maze solving game.  Just use your finger to move Bearnadette to the finish before time runs out.
+      Be sure to avoid the bad things and collect all the good ones.  If you get stuck, you can always show the path but
+      it'll cost you!<p><br>
+
+      <table>
+        <tr>
+          <td><img class="sprite_img" src="images/bear_0.png" />Player</td>
+          <td class="DisclosureHeader">Time Bonus</td>
+          <td class="DisclosureHeader">Time Penalty</td>
+          <td class="DisclosureHeader">Standard Pickup</td>
+          <td class="DisclosureHeader">Bonus Pickup</td>
+        </tr>
+        <tr>
+          <td><img class="sprite_img" src="images/EndPt_0.png" />Finish</td>
+          <td><img class="sprite_img" src="images/Clock_0.png" /></td>
+          <td><img class="sprite_img" src="images/Skull1_0.png" /></td>
+          <td><img class="sprite_img" src="images/Apple_0.png" /></td>
+          <td><img class="sprite_img" src="images/Gold_0.png" /></td>
+        </tr>
+        <tr>
+          <td><img class="sprite_img" src="images/Rocket_0.png" />Rocket - speed boost</td>
+          <td><img class="sprite_img" src="images/Timer_0.png" /></td>
+          <td><img class="sprite_img" src="images/Skull2_0.png" /></td>
+          <td><img class="sprite_img" src="images/Burger_0.png" /></td>
+          <td><img class="sprite_img" src="images/Silver_0.png" /></td>
+        </tr>
+        <tr>
+          <td><img class="sprite_img" src="images/Bomb_0.png" />Bomb - score penalty</td>
+          <td />
+          <td />
+          <td><img class="sprite_img" src="images/Cherry_0.png" /></td>
+          <td><img class="sprite_img" src="images/Jewel1_0.png" /></td>
+        </tr>
+        <tr>
+          <td><img class="sprite_img" src="images/ShowPathImg_0.png" />Show path - score penalty</td>
+          <td />
+          <td />
+          <td><img class="sprite_img" src="images/Lollypop_0.png" /></td>
+          <td><img class="sprite_img" src="images/Jewel2_0.png" /></td>
+        </tr>
+        <tr>
+          <td><img class="sprite_img" src="images/trail_0.png" />Trail</td>
+          <td />
+          <td />
+          <td><img class="sprite_img" src="images/Pizza_0.png" /></td>
+        </tr>
+        <tr>
+          <td />
+          <td />
+          <td />
+          <td><img class="sprite_img" src="images/WaterMelon_0.png" /></td>
+        </tr>
+        <tr>
+          <td />
+        </tr>
+      </table>
+    </div>
+
+    <p><br>
+    <div align=center>
+      <table>
+        <tr onclick="Reset();return false;">
+          <td><img class="button_img" src="VistaICO/Undo.png" /></td>
+          <td><h3>Reset</h3></td>
+        </tr>
+        <tr onclick="GotoGame();return false;">
+          <td><img class="button_img" src="IconsLandVistaMultimediaIcons/Play1Hot.png" /></td>
+          <td><h3>Let's play!</h3></td>
+        </tr>
+      </table>
+    </div>
+
+    <div align=right>
+      <a href="more.html" style="bottom:50px;position:relative;z-index:1000;"><img class="icon" src="VistaICO/Symbol-Information.png" style="width:48px;height:48px;"></a>
+    </div>
+  </div>
+</body>
+</html>
+

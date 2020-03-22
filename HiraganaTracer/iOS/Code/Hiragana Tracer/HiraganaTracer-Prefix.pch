@@ -1,0 +1,7 @@
+//
+// Prefix header for all source files of the 'Hiragana Tracer' target in the 'Hiragana Tracer' project
+//
+
+#ifdef __OBJC__
+  #import <UIKit/UIKit.h>
+#endif

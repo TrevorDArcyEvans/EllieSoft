@@ -1,0 +1,340 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">iPhoneSimulator</Platform>
+    <ProductVersion>9.0.21022</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{6B37BBD1-70DD-4FA6-93B3-EA1A6A685665}</ProjectGuid>
+    <ProjectTypeGuids>{6BC8ED88-2882-458C-8E55-DFD12B67127B};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <OutputType>Exe</OutputType>
+    <RootNamespace>SpottyDottie</RootNamespace>
+    <AssemblyName>SpottyDottie</AssemblyName>
+    <ReleaseVersion>1.0.0</ReleaseVersion>
+    <SynchReleaseVersion>false</SynchReleaseVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|iPhoneSimulator' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\iPhoneSimulator\Debug</OutputPath>
+    <DefineConstants>DEBUG</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <MtouchLink>None</MtouchLink>
+    <MtouchDebug>true</MtouchDebug>
+    <ConsolePause>false</ConsolePause>
+    <MtouchI18n />
+    <MtouchSdkVersion>4.3</MtouchSdkVersion>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <MtouchArch>ARMv6_ARMv7</MtouchArch>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|iPhoneSimulator' ">
+    <DebugType>none</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\iPhoneSimulator\Release</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <MtouchLink>None</MtouchLink>
+    <ConsolePause>false</ConsolePause>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <MtouchArch>ARMv6_ARMv7</MtouchArch>
+    <MtouchI18n />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|iPhone' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\iPhone\Debug</OutputPath>
+    <DefineConstants>DEBUG</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <MtouchDebug>true</MtouchDebug>
+    <CodesignKey>iPhone Developer: Trevor D'Arcy-Evans (QLM934N2ZG)</CodesignKey>
+    <ConsolePause>false</ConsolePause>
+    <MtouchI18n />
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <IpaPackageName />
+    <CrashReportingApiKey />
+    <MtouchArch>ARMv7</MtouchArch>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|iPhone' ">
+    <DebugType>none</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\iPhone\Release</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>false</ConsolePause>
+    <CodesignKey>iPhone Developer: Trevor D'Arcy-Evans (QLM934N2ZG)</CodesignKey>
+    <CodesignProvision>D62EB30B-59A9-4621-ABBE-8A90BD38E17B</CodesignProvision>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <MtouchUseLlvm>true</MtouchUseLlvm>
+    <MtouchArch>ARMv7</MtouchArch>
+    <MtouchUseThumb>true</MtouchUseThumb>
+    <MtouchI18n />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'ReleaseDist|iPhone' ">
+    <DebugType>none</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\iPhone\ReleaseDist</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>false</ConsolePause>
+    <CodesignKey>iPhone Distribution</CodesignKey>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <MtouchUseLlvm>true</MtouchUseLlvm>
+    <MtouchArch>ARMv7</MtouchArch>
+    <MtouchUseThumb>true</MtouchUseThumb>
+    <MtouchI18n />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'ReleaseDist|iPhoneSimulator' ">
+    <DebugType>none</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\ReleaseDist</OutputPath>
+    <WarningLevel>4</WarningLevel>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <MtouchArch>ARMv6_ARMv7</MtouchArch>
+    <MtouchI18n />
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="monotouch" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Icon.png" />
+    <None Include="Icon%402x.png" />
+    <None Include="Icon-72.png" />
+    <None Include="Icon-Small.png" />
+    <None Include="Icon-Small%402x.png" />
+    <None Include="Icon-Small-50.png" />
+    <None Include="Info.plist" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="MainWindow.xib.designer.cs">
+      <DependentUpon>MainWindow.xib</DependentUpon>
+    </Compile>
+    <Compile Include="Main.cs" />
+    <Compile Include="RootViewController.cs" />
+    <Compile Include="DrawingImageScrollView.cs" />
+    <Compile Include="DrawingView.cs" />
+    <Compile Include="PathSegment.cs" />
+    <Compile Include="DrawingImageView.cs" />
+    <Compile Include="Extensions.cs" />
+    <Compile Include="ImageManager.cs" />
+    <Compile Include="DrawingImageScrollViewController.cs">
+    </Compile>
+    <Compile Include="MainWindow_iPad.xib.cs">
+      <DependentUpon>MainWindow_iPad.xib</DependentUpon>
+    </Compile>
+    <Compile Include="MainWindow_iPad.xib.designer.cs">
+      <DependentUpon>MainWindow_iPad.xib</DependentUpon>
+    </Compile>
+    <Compile Include="FlowViewController.cs" />
+    <Compile Include="PngSaver.cs" />
+    <Compile Include="ColourPickerView.cs" />
+    <Compile Include="GlassButton.cs" />
+    <Compile Include="Graphics.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <InterfaceDefinition Include="MainWindow.xib" xmlns="" />
+    <InterfaceDefinition Include="MainWindow_iPad.xib" xmlns="" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <ItemGroup>
+    <Content Include="Default-Landscape.png" />
+    <Content Include="Default-Portrait.png" />
+    <Content Include="4911__NoiseCollector__barkloud.caf" />
+    <Content Include="Settings.bundle\Root.plist" />
+    <Content Include="Menubar\Undo.png" />
+    <Content Include="Menubar\Back.png" />
+    <Content Include="Menubar\Save.png" />
+    <Content Include="Instructions\common.css" />
+    <Content Include="Instructions\index.html" />
+    <Content Include="Instructions\zeimusu_spotty_dog_bg.png" />
+    <Content Include="Instructions\DetailDisclosure.png" />
+    <Content Include="Instructions\DetailDisclosureDown.png" />
+    <Content Include="Instructions\ClearDrawing.png" />
+    <Content Include="Instructions\CoverFlow.png" />
+    <Content Include="Instructions\CoverFlow2.png" />
+    <Content Include="Instructions\Drawing.png" />
+    <Content Include="Instructions\GimpIcons\Draw.png" />
+    <Content Include="Instructions\GimpIcons\Pan2.png" />
+    <Content Include="Instructions\GimpIcons\Undo.png" />
+    <Content Include="Instructions\GimpIcons\Save.png" />
+    <Content Include="Instructions\GimpIcons\Zoom.png" />
+    <Content Include="Instructions\GestureIcons\double_tap.png" />
+    <Content Include="Instructions\GestureIcons\iPhone_shake.png" />
+    <Content Include="Instructions\GestureIcons\one_finger_drag2.png" />
+    <Content Include="Instructions\GestureIcons\one_finger_swipe.png" />
+    <Content Include="Instructions\GestureIcons\pinch_zoom.png" />
+    <Content Include="Instructions\GestureIcons\touch_move_draw.png" />
+    <Content Include="Menubar\Brush.png" />
+    <Content Include="Menubar\ColourPicker.png" />
+    <Content Include="ColourSwatches.png">
+    </Content>
+    <Content Include="Menubar\Trash.png" />
+    <Content Include="Instructions\Device\ColourSwatches.png" />
+    <Content Include="Instructions\Device\SD_Back.png" />
+    <Content Include="Instructions\Device\SD_Brush.png" />
+    <Content Include="Instructions\Device\SD_Clear.png" />
+    <Content Include="Instructions\Device\SD_Colour.png" />
+    <Content Include="Instructions\Device\SD_Save.png" />
+    <Content Include="Instructions\Device\SD_Undo.png" />
+    <Content Include="Default.png" />
+    <Content Include="Instructions\GestureIcons\tap.png" />
+    <Content Include="Thumbs\SpottyDottieHard001.png" />
+    <Content Include="Thumbs\SpottyDottieHard002.png" />
+    <Content Include="Thumbs\SpottyDottieHard003.png" />
+    <Content Include="Thumbs\SpottyDottieHard004.png" />
+    <Content Include="Thumbs\SpottyDottieHard005.png" />
+    <Content Include="Thumbs\SpottyDottieHard006.png" />
+    <Content Include="Thumbs\SpottyDottieHard007.png" />
+    <Content Include="Thumbs\SpottyDottieHard008.png" />
+    <Content Include="Thumbs\SpottyDottieHard009.png" />
+    <Content Include="Thumbs\SpottyDottieHard010.png" />
+    <Content Include="Thumbs\SpottyDottieHard011.png" />
+    <Content Include="Thumbs\SpottyDottieHard012.png" />
+    <Content Include="Thumbs\SpottyDottieHard013.png" />
+    <Content Include="Thumbs\SpottyDottieHard014.png" />
+    <Content Include="Thumbs\SpottyDottieHard015.png" />
+    <Content Include="Thumbs\SpottyDottieHard016.png" />
+    <Content Include="Thumbs\SpottyDottieHard017.png" />
+    <Content Include="Thumbs\SpottyDottieHard018.png" />
+    <Content Include="Thumbs\SpottyDottieHard019.png" />
+    <Content Include="Thumbs\SpottyDottieHard020.png" />
+    <Content Include="Thumbs\SpottyDottieHard021.png" />
+    <Content Include="Thumbs\SpottyDottieHard022.png" />
+    <Content Include="Thumbs\SpottyDottieHard023.png" />
+    <Content Include="Thumbs\SpottyDottieHard024.png" />
+    <Content Include="Thumbs\SpottyDottieHard025.png" />
+    <Content Include="Thumbs\SpottyDottieHard026.png" />
+    <Content Include="Thumbs\SpottyDottieHard027.png" />
+    <Content Include="Thumbs\SpottyDottieHard028.png" />
+    <Content Include="Thumbs\SpottyDottieHard029.png" />
+    <Content Include="Thumbs\SpottyDottieHard030.png" />
+    <Content Include="Thumbs\SpottyDottieHard031.png" />
+    <Content Include="Thumbs\SpottyDottieHard032.png" />
+    <Content Include="Thumbs\SpottyDottieHard033.png" />
+    <Content Include="Thumbs\SpottyDottieHard034.png" />
+    <Content Include="Thumbs\SpottyDottieHard035.png" />
+    <Content Include="Thumbs\SpottyDottieHard036.png" />
+    <Content Include="Thumbs\SpottyDottieHard037.png" />
+    <Content Include="Thumbs\SpottyDottieHard038.png" />
+    <Content Include="Thumbs\SpottyDottieHard039.png" />
+    <Content Include="Thumbs\SpottyDottieHard040.png" />
+    <Content Include="Thumbs\SpottyDottieHard041.png" />
+    <Content Include="Thumbs\SpottyDottieHard042.png" />
+    <Content Include="Thumbs\SpottyDottieHard043.png" />
+    <Content Include="Thumbs\SpottyDottieHard044.png" />
+    <Content Include="Thumbs\SpottyDottieHard045.png" />
+    <Content Include="Thumbs\SpottyDottieHard046.png" />
+    <Content Include="Thumbs\SpottyDottieHard047.png" />
+    <Content Include="Thumbs\SpottyDottieHard048.png" />
+    <Content Include="Thumbs\SpottyDottieHard049.png" />
+    <Content Include="Thumbs\SpottyDottieHard050.png" />
+    <Content Include="Thumbs\SpottyDottieHard051.png" />
+    <Content Include="Thumbs\SpottyDottieHard052.png" />
+    <Content Include="Thumbs\SpottyDottieHard053.png" />
+    <Content Include="Thumbs\SpottyDottieHard054.png" />
+    <Content Include="Thumbs\SpottyDottieHard055.png" />
+    <Content Include="Thumbs\SpottyDottieHard056.png" />
+    <Content Include="Thumbs\SpottyDottieHard057.png" />
+    <Content Include="Thumbs\SpottyDottieHard058.png" />
+    <Content Include="Thumbs\SpottyDottieHard059.png" />
+    <Content Include="Thumbs\SpottyDottieHard060.png" />
+    <Content Include="Thumbs\SpottyDottieHard061.png" />
+    <Content Include="Thumbs\SpottyDottieHard062.png" />
+    <Content Include="Thumbs\SpottyDottieHard063.png" />
+    <Content Include="Thumbs\SpottyDottieHard064.png" />
+    <Content Include="Thumbs\SpottyDottieHard065.png" />
+    <Content Include="Thumbs\SpottyDottieHard066.png" />
+    <Content Include="Full\SpottyDottieHard001.png" />
+    <Content Include="Full\SpottyDottieHard002.png" />
+    <Content Include="Full\SpottyDottieHard003.png" />
+    <Content Include="Full\SpottyDottieHard004.png" />
+    <Content Include="Full\SpottyDottieHard005.png" />
+    <Content Include="Full\SpottyDottieHard006.png" />
+    <Content Include="Full\SpottyDottieHard007.png" />
+    <Content Include="Full\SpottyDottieHard008.png" />
+    <Content Include="Full\SpottyDottieHard009.png" />
+    <Content Include="Full\SpottyDottieHard010.png" />
+    <Content Include="Full\SpottyDottieHard011.png" />
+    <Content Include="Full\SpottyDottieHard012.png" />
+    <Content Include="Full\SpottyDottieHard013.png" />
+    <Content Include="Full\SpottyDottieHard014.png" />
+    <Content Include="Full\SpottyDottieHard015.png" />
+    <Content Include="Full\SpottyDottieHard016.png" />
+    <Content Include="Full\SpottyDottieHard017.png" />
+    <Content Include="Full\SpottyDottieHard018.png" />
+    <Content Include="Full\SpottyDottieHard019.png" />
+    <Content Include="Full\SpottyDottieHard020.png" />
+    <Content Include="Full\SpottyDottieHard021.png" />
+    <Content Include="Full\SpottyDottieHard022.png" />
+    <Content Include="Full\SpottyDottieHard023.png" />
+    <Content Include="Full\SpottyDottieHard024.png" />
+    <Content Include="Full\SpottyDottieHard025.png" />
+    <Content Include="Full\SpottyDottieHard026.png" />
+    <Content Include="Full\SpottyDottieHard027.png" />
+    <Content Include="Full\SpottyDottieHard028.png" />
+    <Content Include="Full\SpottyDottieHard029.png" />
+    <Content Include="Full\SpottyDottieHard030.png" />
+    <Content Include="Full\SpottyDottieHard031.png" />
+    <Content Include="Full\SpottyDottieHard032.png" />
+    <Content Include="Full\SpottyDottieHard033.png" />
+    <Content Include="Full\SpottyDottieHard034.png" />
+    <Content Include="Full\SpottyDottieHard035.png" />
+    <Content Include="Full\SpottyDottieHard036.png" />
+    <Content Include="Full\SpottyDottieHard037.png" />
+    <Content Include="Full\SpottyDottieHard038.png" />
+    <Content Include="Full\SpottyDottieHard039.png" />
+    <Content Include="Full\SpottyDottieHard040.png" />
+    <Content Include="Full\SpottyDottieHard041.png" />
+    <Content Include="Full\SpottyDottieHard042.png" />
+    <Content Include="Full\SpottyDottieHard043.png" />
+    <Content Include="Full\SpottyDottieHard044.png" />
+    <Content Include="Full\SpottyDottieHard045.png" />
+    <Content Include="Full\SpottyDottieHard046.png" />
+    <Content Include="Full\SpottyDottieHard047.png" />
+    <Content Include="Full\SpottyDottieHard048.png" />
+    <Content Include="Full\SpottyDottieHard049.png" />
+    <Content Include="Full\SpottyDottieHard050.png" />
+    <Content Include="Full\SpottyDottieHard051.png" />
+    <Content Include="Full\SpottyDottieHard052.png" />
+    <Content Include="Full\SpottyDottieHard053.png" />
+    <Content Include="Full\SpottyDottieHard054.png" />
+    <Content Include="Full\SpottyDottieHard055.png" />
+    <Content Include="Full\SpottyDottieHard056.png" />
+    <Content Include="Full\SpottyDottieHard057.png" />
+    <Content Include="Full\SpottyDottieHard058.png" />
+    <Content Include="Full\SpottyDottieHard059.png" />
+    <Content Include="Full\SpottyDottieHard060.png" />
+    <Content Include="Full\SpottyDottieHard061.png" />
+    <Content Include="Full\SpottyDottieHard062.png" />
+    <Content Include="Full\SpottyDottieHard063.png" />
+    <Content Include="Full\SpottyDottieHard064.png" />
+    <Content Include="Full\SpottyDottieHard065.png" />
+    <Content Include="Full\SpottyDottieHard066.png" />
+    <Content Include="Default%402x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Settings.bundle\" />
+    <Folder Include="Menubar\" />
+    <Folder Include="Full\" />
+    <Folder Include="Thumbs\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\OpenFlowSharp\OpenFlowSharp\OpenFlowSharp.csproj">
+      <Project>{A8CE55FC-1D12-4DB5-A5F8-836928F7BCD9}</Project>
+      <Name>OpenFlowSharp</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\EllieSoft.Support\EllieSoft.Support.csproj">
+      <Project>{412F3E44-A8C9-4A51-B76B-266889429586}</Project>
+      <Name>EllieSoft.Support</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <ITunesArtwork Include="iTunesArtwork.png" />
+  </ItemGroup>
+</Project>

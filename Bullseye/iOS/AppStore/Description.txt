@@ -1,0 +1,5 @@
+How quick are you?  How accurate are you?  Are you both quick *and* accurate?
+Bullseye is an addictive, fast paced game which demands both speed and accuracy.
+Try to hit the moving targets in a series of levels which rewards speed and
+punishes inaccuracy.
+

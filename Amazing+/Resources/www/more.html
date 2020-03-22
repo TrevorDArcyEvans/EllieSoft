@@ -1,0 +1,139 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html style="margin-left:0px;margin-right:0px;">
+<head>
+  <!-- Change this if you want to allow scaling -->
+  <meta name="viewport" content="width=default-width; user-scalable=no" />
+  <meta http-equiv="Content-type" content="text/html; charset=utf-8">
+
+  <title>More Apps for Kids</title>
+
+  <!-- iPad/iPhone specific css below, add after your main css >
+    <link rel="stylesheet" media="only screen and (max-device-width: 1024px)" href="ipad.css" type="text/css" />
+    <link rel="stylesheet" media="only screen and (max-device-width: 480px)" href="iphone.css" type="text/css" />
+  -->
+
+  <link type="text/css" rel="stylesheet" href="common.css">
+
+  <style>
+    p
+    {
+      -webkit-margin-start: 10px;
+    }
+  </style>
+
+  <script type="text/javascript" charset="utf-8" src="BrowserDetect.js"></script>
+  <script type="text/javascript" charset="utf-8" src="common.js"></script>
+  <script>
+    function HideMoreForParent()
+    {
+      var parentId = GetParameterByName("ParentAppId");
+      if (parentId == "")
+      {
+        return;
+      }
+
+      HideElementById(parentId);
+    }
+  </script>
+</head>
+
+<body id="bg" onLoad="HideMoreForParent();">
+  <h2 align="center">More Apps for Kids</h2>
+
+  <br />
+  If you like this kids App, you'll love our other Apps:
+
+  <div align="center">
+    <hr>
+
+    <div id="AlphabetFlash">
+      <h2 align="center">Alphabet Flash</h2>
+      Learn the shapes and sounds of the alphabet<p>
+      <img class="app_img" src="More/AlphabetFlash.png"><br>
+      <a href="http://itunes.apple.com/us/app/alphabet-flash/id429863053?mt=8&ls=1#">
+        <img alt="AlphabetFlash" title="AlphabetFlash" src="More/App_Store_Badge.png" class="app_store_badge">
+      </a>
+      <a href="http://itunes.apple.com/us/app/alphabet-flash/id432834790?mt=12&ls=1#">
+        <img alt="AlphabetFlash" title="AlphabetFlash" src="More/MacAppStore.jpg" class="android_store_badge">
+      </a>
+      <br>
+      <hr>
+    </div>
+
+    <div id="AlphabetTracer">
+      <h2 align="center">Alphabet Tracer</h2>
+      Learn the signs, shapes and sounds of the alphabet<p>
+      <img class="app_img" src="More/AlphabetTracer.png"><br>
+      <a href="http://itunes.apple.com/us/app/alphabet-tracer/id395330941?mt=8&ls=1#">
+        <img alt="AlphabetTracer" title="AlphabetTracer" src="More/App_Store_Badge.png" class="app_store_badge">
+      </a>
+      <br>
+      <hr>
+    </div>
+
+    <div id="Amazing">
+      <h2 align="center">Amazing</h2>
+      Finish the maze before you run out of time<p>
+      <img class="app_img" src="More/Amazing.png"><br>
+      <a href="http://itunes.apple.com/us/app/amazing/id497803141?ls=1&mt=8&ls=1#">
+        <img alt="Amazing" title="Amazing" src="More/App_Store_Badge.png" class="app_store_badge">
+      </a>
+      <a href="http://itunes.apple.com/gb/app/amazing/id421100582?mt=12">
+        <img alt="Amazing" title="Amazing" src="More/MacAppStore.jpg" class="android_store_badge">
+      </a>
+        <br>
+      <hr>
+    </div>
+
+    <div id="BearBalls">
+      <h2 align="center">Bear Balls</h2>
+      Help Bearnadette avoid the balls<p>
+      <img class="app_img" src="More/BearBalls.png"><br>
+      <a href="http://itunes.apple.com/us/app/bear-balls/id427129615?mt=8&ls=1#">
+        <img alt="BearBalls" title="BearBalls" src="More/App_Store_Badge.png" class="app_store_badge">
+      </a>
+      <a href="http://itunes.apple.com/us/app/bear-balls/id427051392?mt=12&ls=1#">
+        <img alt="BearBalls" title="BearBalls" src="More/MacAppStore.jpg" class="android_store_badge">
+      </a>
+      <br>
+      <hr>
+    </div>
+
+    <div id="SpottyDotty">
+      <h2 align="center">Spotty Dotty</h2>
+        Join the dots with the spotty dog<p>
+      <img class="app_img" src="More/SpottyDotty.png"><br>
+      <a href="itms://itunes.apple.com/us/app/SpottyDotty/id386002201?mt=8">
+        <img alt="SpottyDotty" title="SpottyDotty" src="More/App_Store_Badge.png" class="app_store_badge">
+      </a>
+      <br>
+      <hr>
+    </div>
+
+    <div id="TimeFlash">
+      <h2 align="center">Time Flash</h2>
+      Learn to tell the time with Bearnadette<p>
+      <img class="app_img" src="More/TimeFlash.png"><br>
+      <a href="http://itunes.apple.com/us/app/time-flash/id438510892?mt=8&ls=1#">
+        <img alt="TimeFlash" title="TimeFlash" src="More/App_Store_Badge.png" class="app_store_badge">
+      </a>
+      <!-- a href="http://itunes.apple.com/us/app/time-flash/438633421?mt=12&ls=1#">
+        <img alt="TimeFlash" title="TimeFlash" src="More/MacAppStore.jpg" class="android_store_badge">
+      </a -->
+      <br>
+      <hr>
+    </div>
+
+  </div>
+
+  <div id="buttons" align="center" style="margin-left:0px;margin-right:0px;">
+    <input type="button" onclick="location.href='index.html';return false;" value="Back" />
+    <div align="right">
+      <input type="button" onclick="location.href='copyright.html';return false;" value="&copy;"
+          style="width:50px;right:10px;bottom:57px;position:relative;z-index:1000;"/>
+    </div>
+  </div>
+
+</body>
+</html>
+

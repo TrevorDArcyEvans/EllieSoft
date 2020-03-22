@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">iPhoneSimulator</Platform>
+    <ProductVersion>10.0.0</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{ADC582D1-FE4A-4392-BBF6-35AF02B75B5E}</ProjectGuid>
+    <ProjectTypeGuids>{6BC8ED88-2882-458C-8E55-DFD12B67127B};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <OutputType>Exe</OutputType>
+    <RootNamespace>asciiART</RootNamespace>
+    <AssemblyName>asciiART</AssemblyName>
+    <MtouchSdkVersion>5.0</MtouchSdkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|iPhoneSimulator' ">
+    <DebugSymbols>True</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>False</Optimize>
+    <OutputPath>bin\iPhoneSimulator\Debug</OutputPath>
+    <DefineConstants>DEBUG;</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>False</ConsolePause>
+    <MtouchDebug>True</MtouchDebug>
+    <MtouchProfiling>True</MtouchProfiling>
+    <MtouchLink>None</MtouchLink>
+    <MtouchI18n />
+    <AllowUnsafeBlocks>True</AllowUnsafeBlocks>
+    <MtouchArch>ARMv7</MtouchArch>
+    <MtouchUseSGen>True</MtouchUseSGen>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|iPhoneSimulator' ">
+    <DebugType>none</DebugType>
+    <Optimize>False</Optimize>
+    <OutputPath>bin\iPhoneSimulator\Release</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>False</ConsolePause>
+    <MtouchLink>None</MtouchLink>
+    <MtouchI18n />
+    <AllowUnsafeBlocks>True</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|iPhone' ">
+    <DebugSymbols>True</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>False</Optimize>
+    <OutputPath>bin\iPhone\Debug</OutputPath>
+    <DefineConstants>DEBUG;</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>False</ConsolePause>
+    <CodesignKey>iPhone Developer</CodesignKey>
+    <MtouchDebug>True</MtouchDebug>
+    <MtouchProfiling>True</MtouchProfiling>
+    <IpaPackageName />
+    <AllowUnsafeBlocks>True</AllowUnsafeBlocks>
+    <MtouchI18n />
+    <MtouchArch>ARMv7</MtouchArch>
+    <MtouchUseSGen>True</MtouchUseSGen>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|iPhone' ">
+    <DebugType>none</DebugType>
+    <Optimize>False</Optimize>
+    <OutputPath>bin\iPhone\Release</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>False</ConsolePause>
+    <CodesignKey>iPhone Distribution</CodesignKey>
+    <AllowUnsafeBlocks>True</AllowUnsafeBlocks>
+    <MtouchI18n />
+    <IpaPackageName />
+    <MtouchArch>ARMv7</MtouchArch>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="monotouch" />
+    <Reference Include="MonoTouch.Dialog-1" />
+    <Reference Include="System.Json" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="Facebook">
+      <HintPath>..\..\..\EllieSoft.Support\Facebook\Facebook.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Info.plist" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Main.cs" />
+    <Compile Include="AppDelegate.cs" />
+    <Compile Include="MainViewController.cs" />
+    <Compile Include="MainViewController.designer.cs">
+      <DependentUpon>MainViewController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FlipsideViewController.cs" />
+    <Compile Include="FlipsideViewController.designer.cs">
+      <DependentUpon>FlipsideViewController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ImageSelectorView.cs" />
+    <Compile Include="ImageSelectorView.designer.cs">
+      <DependentUpon>ImageSelectorView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AsciiPageSize.cs" />
+    <Compile Include="AsciiArt.cs" />
+    <Compile Include="Helpers.cs" />
+    <Compile Include="AboutViewController.cs" />
+    <Compile Include="AboutViewController.designer.cs">
+      <DependentUpon>AboutViewController.cs</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <InterfaceDefinition Include="MainStoryboard.storyboard" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\EllieSoft.Support\EllieSoft.Support.csproj">
+      <Project>{412F3E44-A8C9-4A51-B76B-266889429586}</Project>
+      <Name>EllieSoft.Support</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="LoadImagePrompt.png" />
+    <Content Include="common.css" />
+    <Content Include="copyright.html" />
+    <Content Include="Icon.png" />
+    <Content Include="Icon%402x.png" />
+    <Content Include="Icon-Small.png" />
+    <Content Include="Icon-Small%402x.png" />
+    <Content Include="iTunesArtwork%402x.png" />
+    <Content Include="Icon-72.png" />
+    <Content Include="Icon-Small-50.png" />
+    <Content Include="Icon-72%402x.png" />
+    <Content Include="blueButton.png" />
+    <Content Include="blueButton%402x.png" />
+    <Content Include="blueButtonHighlight.png" />
+    <Content Include="blueButtonHighlight%402x.png" />
+    <Content Include="greyButton.png" />
+    <Content Include="greyButton%402x.png" />
+    <Content Include="Default.png" />
+    <Content Include="Default%402x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <ITunesArtwork Include="iTunesArtwork.png" />
+    <ITunesArtwork Include="iTunesArtwork%402x" />
+  </ItemGroup>
+</Project>

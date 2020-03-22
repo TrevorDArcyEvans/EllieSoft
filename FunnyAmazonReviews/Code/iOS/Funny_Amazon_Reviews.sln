@@ -1,0 +1,86 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Funny_Amazon_Reviews", "Funny_Amazon_Reviews.csproj", "{1ADFE148-A657-4362-9C5D-5EDE10863CB6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Vici.Core.MonoTouch", "..\..\..\Vici.Core\Library\Vici.Core.MonoTouch.csproj", "{386480EC-69CB-4B70-AF25-C0D7D39CF708}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Vici.CoolStorage.MonoTouch", "..\..\..\Vici.CoolStorage\Library\Vici.CoolStorage.MonoTouch.csproj", "{9ECBEDAE-3C30-48D5-8282-E32571E436F4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EllieSoft.Support", "..\..\..\EllieSoft.Support\EllieSoft.Support.csproj", "{412F3E44-A8C9-4A51-B76B-266889429586}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|iPhoneSimulator = Debug|iPhoneSimulator
+		Release|iPhoneSimulator = Release|iPhoneSimulator
+		Debug|iPhone = Debug|iPhone
+		Release|iPhone = Release|iPhone
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{1ADFE148-A657-4362-9C5D-5EDE10863CB6}.Debug|iPhone.ActiveCfg = Debug|iPhone
+		{1ADFE148-A657-4362-9C5D-5EDE10863CB6}.Debug|iPhone.Build.0 = Debug|iPhone
+		{1ADFE148-A657-4362-9C5D-5EDE10863CB6}.Debug|iPhoneSimulator.ActiveCfg = Debug|iPhoneSimulator
+		{1ADFE148-A657-4362-9C5D-5EDE10863CB6}.Debug|iPhoneSimulator.Build.0 = Debug|iPhoneSimulator
+		{1ADFE148-A657-4362-9C5D-5EDE10863CB6}.Release|iPhone.ActiveCfg = Release|iPhone
+		{1ADFE148-A657-4362-9C5D-5EDE10863CB6}.Release|iPhone.Build.0 = Release|iPhone
+		{1ADFE148-A657-4362-9C5D-5EDE10863CB6}.Release|iPhoneSimulator.ActiveCfg = Release|iPhoneSimulator
+		{1ADFE148-A657-4362-9C5D-5EDE10863CB6}.Release|iPhoneSimulator.Build.0 = Release|iPhoneSimulator
+		{386480EC-69CB-4B70-AF25-C0D7D39CF708}.Debug|iPhone.ActiveCfg = Debug|iPhone
+		{386480EC-69CB-4B70-AF25-C0D7D39CF708}.Debug|iPhone.Build.0 = Debug|iPhone
+		{386480EC-69CB-4B70-AF25-C0D7D39CF708}.Debug|iPhoneSimulator.ActiveCfg = Debug|iPhoneSimulator
+		{386480EC-69CB-4B70-AF25-C0D7D39CF708}.Debug|iPhoneSimulator.Build.0 = Debug|iPhoneSimulator
+		{386480EC-69CB-4B70-AF25-C0D7D39CF708}.Release|iPhone.ActiveCfg = Release|iPhone
+		{386480EC-69CB-4B70-AF25-C0D7D39CF708}.Release|iPhone.Build.0 = Release|iPhone
+		{386480EC-69CB-4B70-AF25-C0D7D39CF708}.Release|iPhoneSimulator.ActiveCfg = Release|iPhoneSimulator
+		{386480EC-69CB-4B70-AF25-C0D7D39CF708}.Release|iPhoneSimulator.Build.0 = Release|iPhoneSimulator
+		{412F3E44-A8C9-4A51-B76B-266889429586}.Debug|iPhone.ActiveCfg = Debug|Any CPU
+		{412F3E44-A8C9-4A51-B76B-266889429586}.Debug|iPhone.Build.0 = Debug|Any CPU
+		{412F3E44-A8C9-4A51-B76B-266889429586}.Debug|iPhoneSimulator.ActiveCfg = Debug|Any CPU
+		{412F3E44-A8C9-4A51-B76B-266889429586}.Debug|iPhoneSimulator.Build.0 = Debug|Any CPU
+		{412F3E44-A8C9-4A51-B76B-266889429586}.Release|iPhone.ActiveCfg = Release|Any CPU
+		{412F3E44-A8C9-4A51-B76B-266889429586}.Release|iPhone.Build.0 = Release|Any CPU
+		{412F3E44-A8C9-4A51-B76B-266889429586}.Release|iPhoneSimulator.ActiveCfg = Release|Any CPU
+		{412F3E44-A8C9-4A51-B76B-266889429586}.Release|iPhoneSimulator.Build.0 = Release|Any CPU
+		{9ECBEDAE-3C30-48D5-8282-E32571E436F4}.Debug|iPhone.ActiveCfg = Debug|iPhone
+		{9ECBEDAE-3C30-48D5-8282-E32571E436F4}.Debug|iPhone.Build.0 = Debug|iPhone
+		{9ECBEDAE-3C30-48D5-8282-E32571E436F4}.Debug|iPhoneSimulator.ActiveCfg = Debug|iPhoneSimulator
+		{9ECBEDAE-3C30-48D5-8282-E32571E436F4}.Debug|iPhoneSimulator.Build.0 = Debug|iPhoneSimulator
+		{9ECBEDAE-3C30-48D5-8282-E32571E436F4}.Release|iPhone.ActiveCfg = Release|iPhone
+		{9ECBEDAE-3C30-48D5-8282-E32571E436F4}.Release|iPhone.Build.0 = Release|iPhone
+		{9ECBEDAE-3C30-48D5-8282-E32571E436F4}.Release|iPhoneSimulator.ActiveCfg = Release|iPhoneSimulator
+		{9ECBEDAE-3C30-48D5-8282-E32571E436F4}.Release|iPhoneSimulator.Build.0 = Release|iPhoneSimulator
+	EndGlobalSection
+	GlobalSection(MonoDevelopProperties) = preSolution
+		StartupItem = Funny_Amazon_Reviews.csproj
+		Policies = $0
+		$0.TextStylePolicy = $1
+		$1.TabWidth = 2
+		$1.IndentWidth = 2
+		$1.inheritsSet = VisualStudio
+		$1.inheritsScope = text/plain
+		$1.scope = text/x-csharp
+		$0.CSharpFormattingPolicy = $2
+		$2.IndentSwitchBody = True
+		$2.AnonymousMethodBraceStyle = NextLine
+		$2.PropertyBraceStyle = NextLine
+		$2.PropertyGetBraceStyle = NextLine
+		$2.PropertySetBraceStyle = NextLine
+		$2.EventBraceStyle = NextLine
+		$2.EventAddBraceStyle = NextLine
+		$2.EventRemoveBraceStyle = NextLine
+		$2.StatementBraceStyle = NextLine
+		$2.ElseNewLinePlacement = NewLine
+		$2.CatchNewLinePlacement = NewLine
+		$2.FinallyNewLinePlacement = NewLine
+		$2.ArrayInitializerWrapping = DoNotWrap
+		$2.ArrayInitializerBraceStyle = NextLine
+		$2.BeforeMethodDeclarationParentheses = False
+		$2.BeforeMethodCallParentheses = False
+		$2.BeforeConstructorDeclarationParentheses = False
+		$2.BeforeDelegateDeclarationParentheses = False
+		$2.NewParentheses = False
+		$2.inheritsSet = Mono
+		$2.inheritsScope = text/x-csharp
+		$2.scope = text/x-csharp
+	EndGlobalSection
+EndGlobal

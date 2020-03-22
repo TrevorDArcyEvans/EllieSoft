@@ -1,0 +1,7 @@
+//
+// Prefix header for all source files of the 'Amazing' target in the 'Amazing' project
+//
+
+#ifdef __OBJC__
+  #import <UIKit/UIKit.h>
+#endif

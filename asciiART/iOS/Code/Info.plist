@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>AppRater.AppId</key>
+	<string>563189225</string>
+	<key>CFBundleDisplayName</key>
+	<string>asciify</string>
+	<key>CFBundleIconFiles</key>
+	<array>
+		<string>Icon.png</string>
+		<string>Icon@2x.png</string>
+		<string>Icon-Small.png</string>
+		<string>Icon-Small@2x.png</string>
+		<string>Icon-72.png</string>
+		<string>Icon-Small-50.png</string>
+	</array>
+	<key>CFBundleIdentifier</key>
+	<string>EllieSof.asciiART</string>
+	<key>CFBundleURLTypes</key>
+	<array>
+		<dict>
+			<key>CFBundleURLSchemes</key>
+			<array>
+				<string>fb397425273613893</string>
+			</array>
+		</dict>
+	</array>
+	<key>CFBundleVersion</key>
+	<string>1.0.1</string>
+	<key>Email.Body</key>
+	<string>Here is another image made with asciify!</string>
+	<key>Email.Subject</key>
+	<string>Cool image from asciify</string>
+	<key>Facebook.Actions.Link</key>
+	<string>http://www.EllieSoft.co.uk</string>
+	<key>Facebook.Actions.Name</key>
+	<string>asciify by EllieSoft</string>
+	<key>Facebook.AppId</key>
+	<string>397425273613893</string>
+	<key>Facebook.Wall.Caption</key>
+	<string>Your place for great apps</string>
+	<key>Facebook.Wall.Description</key>
+	<string>This cool image was made with asciify</string>
+	<key>Facebook.Wall.Link</key>
+	<string>http://www.EllieSoft.co.uk</string>
+	<key>Facebook.Wall.Message</key>
+	<string>Check out this great image I made with asciify</string>
+	<key>Facebook.Wall.Name</key>
+	<string>asciify</string>
+	<key>InAppPurchase.ProductId</key>
+	<string>EllieSoft.DodgeBallPlus.Upgrade</string>
+	<key>LSRequiresIPhoneOS</key>
+	<false/>
+	<key>MinimumOSVersion</key>
+	<string>5.0</string>
+	<key>Twitter.Text</key>
+	<string>Another image made with asciify!</string>
+	<key>UIDeviceFamily</key>
+	<array>
+		<integer>1</integer>
+	</array>
+	<key>UIFileSharingEnabled</key>
+	<true/>
+	<key>UIMainStoryboardFile</key>
+	<string>MainStoryboard</string>
+	<key>UIPrerenderedIcon</key>
+	<true/>
+	<key>UISupportedInterfaceOrientations</key>
+	<array>
+		<string>UIInterfaceOrientationPortrait</string>
+	</array>
+</dict>
+</plist>

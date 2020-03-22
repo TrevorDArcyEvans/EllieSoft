@@ -1,0 +1,7 @@
+//
+// Prefix header for all source files of the 'AlphabetTracer' target in the 'AlphabetTracer' project
+//
+
+#ifdef __OBJC__
+  #import <UIKit/UIKit.h>
+#endif

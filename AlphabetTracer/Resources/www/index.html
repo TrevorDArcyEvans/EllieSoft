@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<!-- saved from url=(0054)http://devfiles.myopera.com/articles/649/example5.html -->
+<html lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+
+    <!-- Change this if you want to allow scaling -->
+    <meta name="viewport" content="width=default-width; user-scalable=no" />
+
+    <title>Alphabet Tracer</title>
+
+    <link rel="stylesheet" href="colorPicker.css" type="text/css" />
+    <link rel="stylesheet" href="common.css" type="text/css" />
+
+    <style type="text/css">
+      *
+      {
+        margin: 0px;
+      }
+
+      #container
+      {
+        position: relative;
+      }
+
+      #imageView
+      {
+        border: 1px solid #000;
+      }
+
+      #imageTemp
+      {
+        position: absolute;
+        top: 0px;
+        left: 0px;
+     }
+    </style>
+
+    <script language="javascript" type="text/javascript" src="jquery.min.js"></script>
+    <script language="javascript" type="text/javascript" src="jquery.colorPicker.js"></script>
+
+    <script type="text/javascript" src="common.js"></script>
+
+    <script type="text/javascript" src="BrowserDetect.js"></script>
+    <script type="text/javascript" src="CanvasDrawer.js"></script>
+    <script type="text/javascript" src="AlphabetFiles.js"></script>
+    <script type="text/javascript" src="SoundFiles.js"></script>
+    <script type="text/javascript" src="AlphabetTracer.js"></script>
+
+  </head>
+
+  <body onload="OnBodyLoad();" onresize="ResizeCanvas();ReloadCanvas();">
+    <table id="header" width="100%">
+      <tr align="center">
+        <td><input id="color1" type="text" name="color1" value="#333399"/></td>
+        <!-- td><a onclick="ToggleAudio();"><img id="AudioController" class="icon" src="./Resources/Icons/1227973961782836377Farmeral_audio-icon.svg.med.off.png"></a></td -->
+        <td><a onclick="CycleLanguage();"><img id="LanguageController" class="icon" src="./Resources/Flags/PanamaG_UK_Flag.png"></a></td>
+        <td><a onclick="CycleVoice();"><img id="VoiceController" class="icon" src="./Resources/Icons/Gerald_G_Boy_Face_Cartoon_2.png"></a></td>
+        <td><a onclick="CycleLetterType();"><img id="LetterTypeController" class="icon" src="./Resources/Icons/Lower_A.png"></a></td>
+        <td><a onclick="location.href='More_iOS/more.html';"><img class="icon" src="./Resources/Icons/VistaICO/Symbol-Information.png"></a></td>
+      </tr>
+    </table>
+
+    <div id="container">
+      <canvas id="imageView" width="20" height="60"></canvas>
+      <canvas id="imageTemp" width="20" height="60"></canvas>
+    </div>
+
+    <table id="footer" width="100%">
+      <tr align="center">
+        <td><a onclick="PreviousCanvas();"><img class="icon" src="./Resources/Icons/VistaICO/Arrow-Right.png"></a></td>
+        <td><a onclick="ReloadCanvas();"><img class="icon" src="./Resources/Icons/VistaICO/Undo.png"></a></td>
+        <td><a onclick="RandomCanvas();"><img class="icon" src="./Resources/Icons/VistaICO/Refresh.png"></a></td>
+        <td><a onclick="NextCanvas();"><img class="icon" src="./Resources/Icons/VistaICO/Arrow-Left.png"></a></td>
+      </tr>
+    </table>
+  </body>
+</html>

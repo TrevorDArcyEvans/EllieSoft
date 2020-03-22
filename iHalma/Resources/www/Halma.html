@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<!-- saved from url=(0057)http://diveintohtml5.org/examples/localstorage-halma.html -->
+<html lang="en">
+<head>
+  <!-- Change this if you want to allow scaling -->
+  <meta name="viewport" content="width=default-width; user-scalable=no" />
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <meta charset="utf-8">
+  <link type="text/css" rel="stylesheet" href="Halma.css">
+
+  <title>iHalma</title>
+
+  <script src="./Halma_files/halma-localstorage.js"></script>
+  <script type="text/javascript" charset="utf-8" src="common.js"></script>
+  <script>
+  function DoOnResize()
+  {
+    drawBoard();
+  }
+
+  function onBodyLoad()
+  {
+    PreventTouchMove();
+    window.addEventListener("resize", DoOnResize, false);
+  }
+  </script>
+</head>
+
+<body onLoad="onBodyLoad();">
+
+  <canvas id="halma_canvas0" width="451" height="451"></canvas><p>
+  <canvas id="halma_canvas1" width="451" height="451"></canvas><p>
+
+  <table
+    id="scoreboard"
+    style="text-align:center; width:100%; position:absolute; top:20px;"
+    border="0"
+    cellpadding="2"
+    cellspacing="2">
+    <tbody>
+      <tr>
+        <td>Moves: <span id="movecount">0</span></td>
+        <td>Lowest: <span id="lowestmovecount">0</span></td>
+        <td><span align="right"><input type="button" onclick="resetGame()" value="Reset" /></span></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <script>
+    initGame
+    (
+      document.getElementById('halma_canvas0'),
+      document.getElementById('halma_canvas1'),
+      document.getElementById('movecount'),
+      document.getElementById('lowestmovecount'),
+      document.getElementById('scoreboard')
+    );
+  </script>
+</body>
+</html>

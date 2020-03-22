@@ -1,0 +1,68 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+  <head>
+    <!-- Change this if you want to allow scaling -->
+    <meta name="viewport" content="width=default-width; user-scalable=no" />
+
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8">
+    
+    <!-- can't factor out into a separate style sheet - go figure -->
+    <style type="text/css">
+    *
+    {
+      margin: 1px;
+      -webkit-user-select: none;  /* prevent copy paste for all elements */
+    }
+    
+    #bg
+    {
+      width:320px;
+      height:480px;
+      background: url(WarningBG.png);
+    }
+    </style>
+
+    <title>ZombieMatic</title>
+
+  <!-- iPad/iPhone specific css below, add after your main css >
+    <link rel="stylesheet" media="only screen and (max-device-width: 1024px)" href="ipad.css" type="text/css" />
+    <link rel="stylesheet" media="only screen and (max-device-width: 480px)" href="iphone.css" type="text/css" />
+    -->
+
+  <script type="text/javascript" charset="utf-8" src="phonegap.js"></script>
+
+  <script type="text/javascript" charset="utf-8" src="ZombieMatic.js"></script>
+
+  <!-- then load the typeface.js library and typeface.js fonts -->
+  <script src="typeface-0.14.js"></script>
+  <script src="zombie_a.typeface.js"></script>
+  <script src="isleofthedead_regular.typeface.js"></script>
+
+  </head>
+  
+  <body onload="onBodyLoad()">
+
+  <div id="bg" onclick="location.href='player.html';">
+    <div class="typeface-js" style="font-family: Zombie;font-size: 36pt" align="center">
+      ZombieMatic
+    </div>
+    
+    <div class="typeface-js" style="font-family: IsleOfTheDead;font-size: 18pt">
+      Brains... BRAINS... B*R*A*I*N*S!  The undead are alive and on your iPhone or iPod Touch.  
+      Frighten your friends with an impressive collection of over 100 groans, moans and screams.  
+      ZombieMatic brings the undead to life!
+      <br>
+      <a style="font-family: IsleOfTheDead;font-size: 24pt">Instructions:</a>
+      <br>
+      Touch or shake to hear a new zombie sound.
+      <br>
+      Touch anywhere to continue, if you dare...
+    </div>
+    
+    <div align=right>
+      <a href="copyright.html"><img src="Copyright.png" height="32px" width="32px" border="1px"></a>
+    </div>
+  </div>
+
+  </body>
+</html>

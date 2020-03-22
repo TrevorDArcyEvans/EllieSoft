@@ -1,0 +1,18 @@
+*
+{
+  font-family:Arial;
+  -webkit-user-select: none;  /* prevent copy paste for all elements */
+}
+
+#bg
+{
+  background-image:url('drunken_duck_Beer_2_bg.png');
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+img
+{
+  width:40px;
+  height:40px;
+}

@@ -1,0 +1,271 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+  <!-- Change this if you want to allow scaling -->
+  <meta name="viewport" content="width=default-width; user-scalable=no" />
+  <meta http-equiv="Content-type" content="text/html; charset=utf-8">
+
+  <title>Spotty Dottie - Instructions and Copyright</title>
+
+  <!-- iPad/iPhone specific css below, add after your main css >
+    <link rel="stylesheet" media="only screen and (max-device-width: 1024px)" href="ipad.css" type="text/css" />
+    <link rel="stylesheet" media="only screen and (max-device-width: 480px)" href="iphone.css" type="text/css" />
+  -->
+
+  <link type="text/css" rel="stylesheet" href="common.css">
+
+  <script type="text/javascript" language="javascript">
+    function ToggleVisibility(id, disc)
+    {
+      var e = document.getElementById(id);
+      var disc = document.getElementById(disc);
+      if (e.style.visibility == "hidden")
+      {
+        e.style.visibility = "visible";
+        e.style.height = "auto";
+        e.style.overflow = "auto";
+        disc.src = "DetailDisclosureDown.png";
+      }
+      else
+      {
+        e.style.visibility = "hidden";
+        e.style.height = "0px";
+        disc.src = "DetailDisclosure.png";
+      }
+    }
+
+    function ToggleInstructions()
+    {
+      ToggleVisibility("InstructionsDiv", "InstructionsDisclosure");
+    }
+
+    function ToggleCopyright()
+    {
+      ToggleVisibility("CopyrightDiv", "CopyrightDisclosure");
+    }
+  </script>
+
+</head>
+
+<body id="bg">
+  <h1 align="center">Spotty Dottie HD</h1>
+  <h3 align="center">v1.0.0</h3><br>
+  <div id="Instructions">
+  </div>
+
+  <h3 align="left">Instructions<img id="InstructionsDisclosure" class="Disclosure" align="center" src="DetailDisclosureDown.png" onclick="ToggleInstructions();" /></h3>
+  <div id="InstructionsDiv">
+
+    <table>
+      <tr>
+        <td><img class="InstrHeader" src="CoverFlow.png" /></td>
+        <td>
+          <table class="Instruction">
+            <tr>
+              <td><img class="InstrImg" src="GestureIcons/one_finger_swipe.png" /></td>
+              <td><img class="InstrImg" src="CoverFlow2.png" /></td>
+            </tr>
+            <tr>
+              <td colspan="2">Swipe to browse</td>
+            </tr>
+          </table>
+      </td>
+      </tr>
+
+     <tr>
+        <td></td>
+        <td>
+          <table class="Instruction">
+            <tr>
+              <td><img class="InstrImg" src="GestureIcons/tap.png" /></td>
+              <td><img class="InstrImg" src="Drawing.png" /></td>
+            </tr>
+            <tr>
+            <tr>
+              <td colspan="2">Tap to start</td>
+            </tr>
+          </table>
+      </tr>
+    </table>
+
+    <table>
+      <tr>
+        <td><img class="InstrHeader" src="Drawing.png" /></td>
+        <td>
+          <table class="Instruction">
+            <tr>
+              <td><img class="InstrImg" src="GestureIcons/touch_move_draw.png" /></td>
+              <td><img class="InstrImg" src="GimpIcons/Draw.png" /></td>
+            </tr>
+            <tr>
+              <td colspan="2">Touch and move to draw</td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+      <tr>
+
+      <tr>
+        <td></td>
+        <td>
+          <table class="Instruction">
+            <tr>
+              <td><img class="InstrImg" src="GestureIcons/pinch_zoom.png" /></td>
+              <td><img class="InstrImg" src="GimpIcons/Zoom.png" /></td>
+            </tr>
+            <tr>
+              <td colspan="2">Pinch to zoom</td>
+            </tr>
+          </table>
+          </td>
+      </tr>
+
+      <tr>
+        <td></td>
+        <td>
+          <table class="Instruction">
+            <tr>
+              <td><img class="InstrImg" src="GestureIcons/one_finger_drag2.png" /></td>
+              <td><img class="InstrImg" src="GimpIcons/Pan2.png" /></td>
+            </tr>
+            <tr>
+              <td colspan="2">Drag to move</td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+
+      <tr>
+        <td></td>
+        <td>
+          <table class="Instruction">
+            <tr>
+              <td><img class="InstrImg" src="Device/SD_Save.png" /></td>
+              <td><img class="InstrImg" src="GimpIcons/Save.png" /></td>
+            <tr>
+              <td colspan="2">Save to Photos</td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+
+      <tr>
+        <td></td>
+        <td>
+          <table class="Instruction">
+            <tr>
+              <td><img class="InstrImg" src="Device/SD_Colour.png" /></td>
+              <td><img class="InstrImg" src="Device/ColourSwatches.png" /></td>
+            <tr>
+              <td colspan="2">Select color</td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+
+      <tr>
+        <td></td>
+        <td>
+          <table class="Instruction">
+            <tr>
+              <td><img class="InstrImg" src="Device/SD_Brush.png" /></td>
+              <td><img class="InstrImg" src="GimpIcons/Draw.png" /></td>
+            <tr>
+              <td colspan="2">Set width</td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+
+      <tr>
+        <td></td>
+        <td>
+          <table class="Instruction">
+            <tr>
+              <td><img class="InstrImg" src="Device/SD_Undo.png" /></td>
+              <td><img class="InstrImg" src="GimpIcons/Undo.png" /></td>
+            <tr>
+              <td colspan="2">Undo last line</td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+
+      <tr>
+        <td></td>
+        <td>
+          <table class="Instruction">
+            <tr>
+              <td><img class="InstrImg" src="GestureIcons/iPhone_shake.png" /></td>
+              <td><img class="InstrImg" src="ClearDrawing.png" /></td>
+            <tr>
+              <td colspan="2">Shake to clear</td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+
+      <tr>
+        <td></td>
+        <td>
+          <table class="Instruction">
+            <tr>
+              <td><img class="InstrImg" src="Device/SD_Clear.png" /></td>
+              <td><img class="InstrImg" src="ClearDrawing.png" /></td>
+            <tr>
+              <td colspan="2">Clear</td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+
+      <tr>
+        <td></td>
+        <td>
+          <table class="Instruction">
+            <tr>
+              <td><img class="InstrImg" src="Device/SD_Back.png" /></td>
+              <td><img class="InstrImg" src="CoverFlow.png" /></td>
+            <tr>
+              <td colspan="2">Go back to start</td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+
+    </table>
+
+    <br>
+    <br>
+
+  </div>
+
+  <h3 align="left">Boring Stuff<img id="CopyrightDisclosure" class="Disclosure" align="center" src="DetailDisclosure.png" onclick="ToggleCopyright();" /></h3>
+  <div id="CopyrightDiv" style="visibility:hidden">
+
+    <big>Q</big>How do I turn off the sounds?<br>
+    <big>A</big>Settings > Spotty Dottie HD > Play Sounds<br>
+    <br>
+
+    Written by:
+    <dd>
+    <big>
+    <a href="mailto:tdarcyevans@EllieSoft.co.uk">
+    Trevor D'Arcy-Evans
+    <p>(tdarcyevans@EllieSoft.co.uk)</p>
+    </a>
+    </big>
+    </dd>
+    <br>
+
+    For more great iPhone and iPad apps, visit us at:
+    <dd>
+    <big>
+    <a href="www.EllieSoft.co.uk">www.EllieSoft.co.uk</a>
+    </big>
+    </dd>
+
+  </div>
+
+</body>
+</html>

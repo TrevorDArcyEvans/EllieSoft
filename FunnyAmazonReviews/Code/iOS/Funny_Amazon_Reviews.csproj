@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">iPhoneSimulator</Platform>
+    <ProductVersion>10.0.0</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{1ADFE148-A657-4362-9C5D-5EDE10863CB6}</ProjectGuid>
+    <ProjectTypeGuids>{6BC8ED88-2882-458C-8E55-DFD12B67127B};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <OutputType>Exe</OutputType>
+    <RootNamespace>Funny_Amazon_Reviews</RootNamespace>
+    <AssemblyName>Funny_Amazon_Reviews</AssemblyName>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|iPhoneSimulator' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\iPhoneSimulator\Debug</OutputPath>
+    <DefineConstants>DEBUG;</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>false</ConsolePause>
+    <MtouchDebug>true</MtouchDebug>
+    <MtouchProfiling>true</MtouchProfiling>
+    <MtouchLink>None</MtouchLink>
+    <MtouchI18n />
+    <MtouchArch>ARMv7</MtouchArch>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|iPhoneSimulator' ">
+    <DebugType>none</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\iPhoneSimulator\Release</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>false</ConsolePause>
+    <MtouchLink>None</MtouchLink>
+    <MtouchArch>ARMv7</MtouchArch>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|iPhone' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\iPhone\Debug</OutputPath>
+    <DefineConstants>DEBUG;</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>false</ConsolePause>
+    <CodesignKey>iPhone Developer</CodesignKey>
+    <MtouchDebug>true</MtouchDebug>
+    <MtouchProfiling>true</MtouchProfiling>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|iPhone' ">
+    <DebugType>none</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\iPhone\Release</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>false</ConsolePause>
+    <CodesignKey>iPhone Distribution</CodesignKey>
+    <MtouchArch>ARMv7</MtouchArch>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="monotouch" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.ServiceModel.Web" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Info.plist" />
+    <None Include="Data\0870334336.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Main.cs" />
+    <Compile Include="AppDelegate.cs" />
+    <Compile Include="RootViewController.cs" />
+    <Compile Include="RootViewController.designer.cs">
+      <DependentUpon>RootViewController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ProductsTableViewCtrl.cs" />
+    <Compile Include="ProductsTableViewCtrl.designer.cs">
+      <DependentUpon>ProductsTableViewCtrl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CustomerReviewsViewCtrl.cs" />
+    <Compile Include="CustomerReviewsViewCtrl.designer.cs">
+      <DependentUpon>CustomerReviewsViewCtrl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TableSource.cs" />
+    <Compile Include="AmazonProductInfo.cs" />
+    <Compile Include="MoreViewCtrl.cs" />
+    <Compile Include="MoreViewCtrl.designer.cs">
+      <DependentUpon>MoreViewCtrl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AboutViewCtrl.cs" />
+    <Compile Include="AboutViewCtrl.designer.cs">
+      <DependentUpon>AboutViewCtrl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SignedRequestHelper.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <InterfaceDefinition Include="MainStoryboard.storyboard" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <ItemGroup>
+    <Content Include="Data\0306804379.jpg" />
+    <Content Include="Data\0764553224.jpg" />
+    <Content Include="Data\0806523832.jpg" />
+    <Content Include="Data\0833030477.jpg" />
+    <Content Include="Data\0834003473.jpg" />
+    <Content Include="Data\1451623747.jpg" />
+    <Content Include="Data\1582701709.jpg" />
+    <Content Include="Data\1594743061.jpg" />
+    <Content Include="Data\B0000070S1.jpg" />
+    <Content Include="Data\B00006IE6X.jpg" />
+    <Content Include="Data\B00012182G.jpg" />
+    <Content Include="Data\B0002CYTL2.jpg" />
+    <Content Include="Data\B00032G1S0.jpg" />
+    <Content Include="Data\B00067F1CE.jpg" />
+    <Content Include="Data\B0006FU9DC.jpg" />
+    <Content Include="Data\B0006IGZSM.jpg" />
+    <Content Include="Data\B000796XXM.jpg" />
+    <Content Include="Data\B000FVUKKO.jpg" />
+    <Content Include="Data\B000HKSSLQ.jpg" />
+    <Content Include="Data\B000I1X6PM.jpg" />
+    <Content Include="Data\B000IZAYR6.jpg" />
+    <Content Include="Data\B000IZGIA8.jpg" />
+    <Content Include="Data\B000J36XR2.jpg" />
+    <Content Include="Data\B000JU8FXK.jpg" />
+    <Content Include="Data\B000K6TGRW.jpg" />
+    <Content Include="Data\B000KKNQBK.jpg" />
+    <Content Include="Data\B000LKLN28.jpg" />
+    <Content Include="Data\B000NG3ZKI.jpg" />
+    <Content Include="Data\B000Q2ULMY.jpg" />
+    <Content Include="Data\B000QDTSSG.jpg" />
+    <Content Include="Data\B000R4MWR8.jpg" />
+    <Content Include="Data\B000SON5IC.jpg" />
+    <Content Include="Data\B000SSV8AA.jpg" />
+    <Content Include="Data\B000TYDNLA.jpg" />
+    <Content Include="Data\B000WCW4FK.jpg" />
+    <Content Include="Data\B000WVXM0W.jpg" />
+    <Content Include="Data\B0010VS078.jpg" />
+    <Content Include="Data\B0014DNPU4.jpg" />
+    <Content Include="Data\B00161UFRU.jpg" />
+    <Content Include="Data\B0017T0X9G.jpg" />
+    <Content Include="Data\B001CHN4TO.jpg" />
+    <Content Include="Data\B001DZTJRQ.jpg" />
+    <Content Include="Data\B001T44Z0W.jpg" />
+    <Content Include="Data\B0020MLI5C.jpg" />
+    <Content Include="Data\B002A6HXL6.jpg" />
+    <Content Include="Data\B002HJ377A.jpg" />
+    <Content Include="Data\B0037TPED4.jpg" />
+    <Content Include="Data\B003CT2A6I.jpg" />
+    <Content Include="Data\B003EWECSC.jpg" />
+    <Content Include="Data\B003G4IM4S.jpg" />
+    <Content Include="Data\B003NI572M.jpg" />
+    <Content Include="Data\B00421A4EK.jpg" />
+    <Content Include="Data\B004CRYE2C.jpg" />
+    <Content Include="Data\B0058EOAUE.jpg" />
+    <Content Include="Data\B005MR3IVO.jpg" />
+    <Content Include="Data\B005OSVZN4.jpg" />
+    <Content Include="Data\B0064CKPC6.jpg" />
+    <Content Include="Data\B0070QMUFA.jpg" />
+    <Content Include="Data\Amazon.db3" />
+    <Content Include="More_iOS\email_32.png" />
+    <Content Include="More_iOS\facebook.png" />
+    <Content Include="More_iOS\facebook_32.png" />
+    <Content Include="More_iOS\twitter_32.png" />
+    <Content Include="More_iOS\date.txt" />
+    <Content Include="More_iOS\more.html" />
+    <Content Include="About_iOS\about.html" />
+    <Content Include="Icons\Icon.png" />
+    <Content Include="Icons\Icon%402x.png" />
+    <Content Include="Icons\Icon-72.png" />
+    <Content Include="Icons\Icon-Small.png" />
+    <Content Include="Icons\Icon-Small%402x.png" />
+    <Content Include="Icons\Icon-Small-50.png" />
+    <Content Include="Icons\icon2_512x512.png" />
+    <Content Include="Splash\Default.png" />
+    <Content Include="Splash\Default%402x.png" />
+    <Content Include="Default.png" />
+    <Content Include="Default%402x.png" />
+    <Content Include="About.png" />
+    <Content Include="More.png" />
+    <Content Include="Products.png" />
+    <Content Include="Products%402x.png" />
+    <Content Include="More%402x.png" />
+    <Content Include="More_iOS\AlphabetFlash.png" />
+    <Content Include="More_iOS\AlphabetTracer.png" />
+    <Content Include="More_iOS\Amazing.png" />
+    <Content Include="More_iOS\BearBalls.png" />
+    <Content Include="More_iOS\feed.png" />
+    <Content Include="More_iOS\SpottyDotty.png" />
+    <Content Include="More_iOS\TimeFlash.png" />
+    <Content Include="More_iOS\TopAppsForChildren_logo.png" />
+    <Content Include="More_iOS\twitter.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\Vici.CoolStorage\Library\Vici.CoolStorage.MonoTouch.csproj">
+      <Project>{9ECBEDAE-3C30-48D5-8282-E32571E436F4}</Project>
+      <Name>Vici.CoolStorage.MonoTouch</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\Vici.Core\Library\Vici.Core.MonoTouch.csproj">
+      <Project>{386480EC-69CB-4B70-AF25-C0D7D39CF708}</Project>
+      <Name>Vici.Core.MonoTouch</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\EllieSoft.Support\EllieSoft.Support.csproj">
+      <Project>{412F3E44-A8C9-4A51-B76B-266889429586}</Project>
+      <Name>EllieSoft.Support</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadataStorage Include="Service References\webservices.amazon.com" />
+  </ItemGroup>
+  <ItemGroup>
+    <WebReferences Include="Web References" />
+  </ItemGroup>
+  <ItemGroup>
+    <WebReferenceUrl Include="http://webservices.amazon.com/AWSECommerceService/AWSECommerceService.wsdl">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\webservices.amazon.com</RelPath>
+      <UpdateFromURL>http://webservices.amazon.com/AWSECommerceService/AWSECommerceService.wsdl</UpdateFromURL>
+    </WebReferenceUrl>
+  </ItemGroup>
+  <ItemGroup>
+    <ITunesArtwork Include="iTunesArtwork" />
+  </ItemGroup>
+</Project>

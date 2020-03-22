@@ -1,0 +1,2 @@
+lives = JS_GetHighLevel();
+
