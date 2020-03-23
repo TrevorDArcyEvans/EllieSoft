@@ -37,10 +37,8 @@ released new versions very often.
 
 ## Apps
 
-### Alphabet Flash
+### Alphabet Flash <img src="AlphabetFlash/iOS/AppStore/AlphabetFlash.png" width="72" height="72"/>
 <details>
-
-<img src="AlphabetFlash/iOS/AppStore/AlphabetFlash.png" alt="Alphabet Flash" width="72" height="72"/>
 
 'Alphabet Flash' is a fun app for children up to 5 years old to learn the shapes and sounds of the alphabet.
 
@@ -68,6 +66,19 @@ Start your child off by trying the alphabet in sequence.  Once he or she has mas
 Large, fun buttons and a simple to use interface make it easy for your child to get started and stay engaged.
 
 'Alphabet Flash' is a universal app, so it will work in native resolution on your iPhone, iPod Touch and iPad for the one price.</details>
+
+<details>
+  <summary>Screenshots</summary>
+  
+  <img src="AlphabetFlash/iOS/AppStore/iPad01.png"/><p>
+  <img src="AlphabetFlash/iOS/AppStore/iPad02.png"/><p>
+  <img src="AlphabetFlash/iOS/AppStore/iPad03.png"/><p>
+  <img src="AlphabetFlash/iOS/AppStore/iPhone01.png"/><p>
+  <img src="AlphabetFlash/iOS/AppStore/iPhone02.png"/><p>
+  <img src="AlphabetFlash/iOS/AppStore/iPhone03.png"/><p>
+</details>
+
+</details>
 
 ### Alphabet Tracer
 <details>
