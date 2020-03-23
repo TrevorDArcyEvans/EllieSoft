@@ -40,7 +40,7 @@ released new versions very often.
 ### Alphabet Flash
 <details>
 
-![Alphabet Flash](AlphabetFlash/iOS/AppStore/AlphabetFlash.png "Alphabet Flash")
+<img src="AlphabetFlash/iOS/AppStore/AlphabetFlash.png" alt="Alphabet Flash" width="72" height="72"/>
 
 'Alphabet Flash' is a fun app for children up to 5 years old to learn the shapes and sounds of the alphabet.
 
